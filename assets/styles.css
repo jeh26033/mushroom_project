@@ -1,0 +1,20 @@
+/*styles for the mushroom page */
+
+/*universal*/
+
+main{
+	border: 1px solid black;
+}
+
+aside{
+	float:right;
+	border: 1px solid black;
+}
+
+.row{
+	border: 1px solid black;
+}
+
+.col-md-2{
+	border: 1px solid black;
+}
