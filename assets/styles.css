@@ -2,19 +2,60 @@
 
 /*universal*/
 
+ 
+
 main{
-	border: 1px solid black;
+
 }
 
 aside{
 	float:right;
-	border: 1px solid black;
+	border-left: 10px solid grey;
 }
 
 .row{
 	border: 1px solid black;
 }
 
-.col-md-2{
+
+
+/*typography*/
+
+#info{
 	border: 1px solid black;
+	width: 100%;
+}
+
+p{
+	line-height: 2;
+	font-size: 1.5em;
+	padding: 10px;
+
+}
+
+h1,h2,h3,h4{
+	line-height: 2;
+	font-weight: bold;
+}
+
+/*media */
+
+img{
+	border: 1px solid black;
+	padding:10px;
+	margin: 10px;
+	margin: 20px;
+}
+
+/*nav */
+nav{
+
+	margin: 10px;
+}
+
+#nav-list{
+	text-align: center;
+}
+.nav-item{
+	font-size: 1.5em;
 }
