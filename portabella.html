@@ -3,12 +3,34 @@
 <head>
 	<!--bootstrap css-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<!-- Custom Css -->
 	<link rel="stylesheet" type="text/css" href="assets/styles.css">
+	<!-- favicon-->
 	<link rel="shortcut icon" href="assets/mushroom.ico">
-	<title>Mushrooms</title>
+	<!--Animate Css -->
+	<link rel="stylesheet" type="text/css" href="assets/animate.css">
+	<!--Iconic -->
+	<link href="assets/Iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+	<!-- script to generate a random link to a mushroom page -->	
+	<script type="text/javascript">
+	  	function randomLink() {
+	  		var randommath=Math.round(Math.random()*6)
+	  		var links= new Array()
+	  		links[0]="chanterelle.html"
+	  		links[1]='enoki.html'
+	  		links[2]='maitake.html'
+	  		links[3]='oyster.html'
+	  		links[4]='portabella.html'
+	  		links[5]='shitake.html'
+
+	  		window.location=links[randommath]
+	  	}
+	</script>	
+	<title>Portabella | Mushrooms</title>
 </head>
 <body>
 	<div class="container-fluid">
+
 		<header>
 			<h1>The Wonderful World of Mushrooms</h1>
 			<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #D28540;">
@@ -22,11 +44,11 @@
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul id="nav-list" class="navbar-nav mr-auto">
 
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 					</li>
 
-					<li class="nav-item">
+					<li class="nav-item animated infinite pulse active">
 						<a class="nav-link" href="portabella.html">Portabella</a>
 					</li>
 
@@ -50,53 +72,48 @@
 						<a class="nav-link" href="chanterelle.html">Chanterelle</a>
 					</li>
 
+					<li class="nav-item">
+						 <input class="nav-link text-center" 
+					  type="button" value="Random Mushroom!" onclick="randomLink()">
+					</li>			
 			    </ul>
 			    
 			  </div>
 			</nav>
-			
 		</header>
 
 		<main>
 			<div class="row">
-				<div id="info" class="col-lg-8">
-
-					<img class= "float-left col-md-3 img-fluid" src="assets/mushrooms.jpg">
-					<p>A mushroom is classified as the fleshy, spore making section of a fungus, usually created above the surface of the earth. They appear in many shapes, sizes, flavors, and colors. Some are delicious, and can create wonderful food, either on their own or as accompaniments to other foods. There are mushrooms that defy our expectations for what a mushroom should look like, and each has it's own unique flavor profile. </p>
-
-
-					<img class="float-right col-md-3 img-fluid" src="assets/mushrooms.jpg">
-					<p>Others have medicinal benefits, and others can out-right kill you or poison you. To be safe, it's best to purchase your Fungi from a good source, like a farmers market or a supermarket, and probably not out in the forest, unless you really trust your fungal knowledge. This site covers many common mushrooms you'll find in such places,and serves as an introduction to the Wonder World of Mushrooms!</p>
-
-				</div>
+				<div id="info" class="col-lg-10">
+					<h1>Portabella</h1>
+					<h4>Where to find</h4>
+					<img class= "mushrooms float-left col-md-2 img-fluid" src="assets/mushrooms.jpg">
+					<p>It's hard not to find a portobello mushroom, as it's one of the most commonly sold fungus in the world, though it is native to the grasslands of Europe and North America. While immature, it's sold as a common white, or button, mushroom. It only becomes a true porto when the cap opens and you can see the gills. Even then, it can be sold under names like baby bella, Roman brown, cremini, or chestnut. This is the typical mushroom that everyone has eaten or at least seen. </p>
+					
+					<h4>How to cook the bella</h4>
+					<img class="mushrooms float-right col-md-2 img-fluid" src="assets/mushrooms.jpg">
+					<p>This mushroom can do it all. It's a jack-of-all-trades, master-of-none deal with this one, being tasty and inoffensive to appeal to a huge mainstream audience. Since it comes in many forms, I'll stick to the basic Portobello mushroom. This guy's a really meaty mushroom. With a nice, mild, earthy flavor, and giant size, up to 6 inches across, you can easily use these as hamburger replacements, or as bun replacements. They can go anywhere: salads, pizza, pasta, sandwiches, sauteed in butter or breaded and fried in oil, this is the go-to mushroom for millions. </p>
+					<div id="runshroom-home"><img class="runshroom" height="200" width="200" src="assets/pixelshroom.gif"></div>
+				</div> <!--info div-->
 
 				<aside class="col-md">
-					<h2>Join our mushroom-based email newsletter!</h2>
-					<form>
-					  <div class="form-group">
-					    <label for="exampleInputEmail1">Email address</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-					    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-					  </div>
-					  <div class="form-group">
-					    <label for="exampleInputPassword1">Password</label>
-					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-					  </div>
-					  <div class="form-check">
-					    <label class="form-check-label">
-					      <input type="checkbox" class="form-check-input">
-					      Check me out
-					    </label>
-					  </div>
-					  <button type="submit" class="btn btn-primary">Submit</button>
-					</form>
+					<h2>Quick Stats!</h2>
+					<ul>
+						<li><strong>Genus:</strong> Agaricus</li>
+						<li><strong>Color:</strong> White/brown</li>
+						<li><strong>Habitat:</strong> Grasslands, Supermarket.</li>
+						<li><strong>Season:</strong> All year round </li>
+						<li><strong>Taste: </strong> <span class="double oi oi-star" title="star" aria-hidden="true"></span><span class="double oi oi-star" title="star" aria-hidden="true"></span></li>
+					</ul>
 				</aside>
+
+
 			</div><!--row-->
 		</main>
 
 	
 		
-		<footer class="container-fluid">
+		<footer >
 		     <p class="text-center">&copy; <img src="assets/pixelpugicon.ico"> Pugdog Webdesign 2017</p>
 		</footer>
 	</div><!--container-->
